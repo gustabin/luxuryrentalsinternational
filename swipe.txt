@@ -1,0 +1,40 @@
+<div class="container">
+	<div class="row">
+		<div id="myCarousel" class="carousel slide" style="max-width: 900px; margin: 0px auto;">
+            <ol class="carousel-indicators hidden-xs hidden-sm" style="padding-bottom: 42px;">
+                <li data-target="#carcousel-example-generic" data-slide-to="0" class="active"></li>
+                <li data-target="#carcousel-example-generic" data-slide-to="1"></li>
+                <li data-target="#carcousel-example-generic" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="active item" align="center"><a href="#"><img src="http://lorempixel.com/1920/1080/city/" class="img-rounded" alt="PS3 reparatie Haarlem"></a>
+                    <div class="carousel-caption">
+                        <h3>Cupcake ipsum dolor sit amet</h3>
+                        <p>Powder chocolate carrot cake. Applicake tart icing chupa chups marshmallow apple pie candy canes gingerbread croissant.</p>
+                    </div>
+                </div>
+                <div class="item" align="center"><a href="#"><img src="http://lorempixel.com/1920/1080/nature/" class="img-rounded" alt="Blu-ray Lens reparatie"></a>
+                    <div class="carousel-caption">
+                        <h3>Cupcake ipsum dolor sit amet</h3>
+                        <p>Pudding fruitcake chocolate pastry caramels dessert powder cupcake. Marzipan sweet roll jelly macaroon brownie.</p>
+                    </div>
+                </div>
+                <div class="item" align="center"><a href="#"><img src="http://lorempixel.com/1920/1080/food/" class="img-rounded" alt="Yellow Light of Death"></a>
+                    <div class="carousel-caption">
+                        <h3>Cupcake ipsum dolor sit amet</h3>
+                        <p>Ice cream pie marzipan cookie macaroon dragée cookie. Caramels tootsie roll danish chocolate cake pastry icing.</p>
+                    </div>
+                </div>
+            </div>
+            <a class="left carousel-control" href="#myCarousel" data-slide="prev">‹</a>
+            <a class="right carousel-control" href="#myCarousel" data-slide="next">›</a>
+        </div>
+	</div>
+</div>
+
+<script src="//code.jquery.com/mobile/1.4.0/jquery.mobile-1.4.0.min.js"></script>
+
+<script>
+    // Add this to let the carousel start automatic
+    $('.carousel').carousel();
+</script>

@@ -1,0 +1,11 @@
+[PHP]
+display_errors=on
+error_reporting=32767
+file_uploads=on
+open_basedir="G:/PleskVhosts//luxuryrentalsinternational.com\;C:\Windows\Temp\"
+[mail function]
+SMTP=smtp.gmail.com
+smtp_port=587
+[sendmail]
+SMTP=smtp.gmail.com
+smtp_port=587
