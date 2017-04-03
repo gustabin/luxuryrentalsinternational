@@ -1,11 +1,5 @@
 <?php
 session_start();
-error_reporting(0);
-	//=======Redirigir al login  ===================
-	if (($_SESSION['usuario']<=2) OR (empty($_SESSION['usuario']))) { //=======Redirigir al login===================
-	header("Location: login.php");
-	}
-date_default_timezone_set('America/Caracas');
 $_SESSION['valor'] = 1; //Activa la opcion del menu actual
 include "header.php";
 ?>
@@ -25,14 +19,14 @@ include "header.php";
         <div class="heading-image animate-panel" data-child="img-animate" data-effect="fadeInRight">
             <p class="small">Just choose the module you want to work with.</p>
             <a href="propertylist.php"><img class="img-animate" src="images/landing/propertylist.gif"></a>
-            <a href="propertylist.php"><img class="img-animate" src="images/landing/propertyeditor.gif"></a>            
-            <a href="propertylist.php"><img class="img-animate" src="images/landing/gallery.gif"></a>
-            <a href="amenitieslist.php"><img class="img-animate" src="images/landing/amenities.gif"></a>           
+            <a href="#"><img class="img-animate" src="images/landing/propertyeditor.gif"></a>            
+            <a href="#"><img class="img-animate" src="images/landing/gallery.gif"></a>
+            <a href="#"><img class="img-animate" src="images/landing/amenities.gif"></a>           
             <br/>
-            <a href="propertylist.php"><img class="img-animate" src="images/landing/settingroom.gif"></a>
-            <a href="propertylist.php"><img class="img-animate" src="images/landing/images.gif"></a>
-            <a href="propertylist.php"><img class="img-animate" src="images/landing/mapaddress.gif"></a>            
-            <a href="propertylist.php"><img class="img-animate" src="images/landing/reviews.gif"></a>            
+            <a href="#"><img class="img-animate" src="images/landing/settingroom.gif"></a>
+            <a href="#"><img class="img-animate" src="images/landing/images.gif"></a>
+            <a href="#"><img class="img-animate" src="images/landing/mapaddress.gif"></a>            
+            <a href="#"><img class="img-animate" src="images/landing/reviews.gif"></a>            
         </div>
     </div>
 </header>

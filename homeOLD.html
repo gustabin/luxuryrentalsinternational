@@ -1,14 +1,62 @@
-<?php
-session_start();
-error_reporting(0);
-	//=======Redirigir al login  ===================
-	if (($_SESSION['usuario']<=2) OR (empty($_SESSION['usuario']))) { //=======Redirigir al login===================
-	header("Location: login.php");
-	}
-date_default_timezone_set('America/Caracas');
-$_SESSION['valor'] = 1; //Activa la opcion del menu actual
-include "header.php";
-?>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="robots" content="noindex">
+    <!-- Page title -->
+    <title>Back end | Luxury Rentals International</title>
+
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <link rel="shortcut icon" type="image/ico" href="favicon.ico" />
+
+    <!-- Vendor styles -->
+    <link rel="stylesheet" href="vendor/fontawesome/css/font-awesome.css" />
+    <link rel="stylesheet" href="vendor/metisMenu/dist/metisMenu.css" />
+    <link rel="stylesheet" href="vendor/animate.css/animate.css" />
+    <link rel="stylesheet" href="vendor/bootstrap/dist/css/bootstrap.css" />
+
+    <!-- App styles -->
+    <link rel="stylesheet" href="fonts/pe-icon-7-stroke/css/pe-icon-7-stroke.css" />
+    <link rel="stylesheet" href="fonts/pe-icon-7-stroke/css/helper.css" />
+    <link rel="stylesheet" href="styles/style.css">
+
+</head>
+<body class="landing-page">
+
+<!-- Simple splash screen-->
+<div class="splash"> <div class="color-line"></div><div class="splash-title"><h1>LRI - Back end</h1><p>Special Admin Desktop. </p><div class="spinner"> <div class="rect1"></div> <div class="rect2"></div> <div class="rect3"></div> <div class="rect4"></div> <div class="rect5"></div> </div> </div> </div>
+
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button aria-controls="navbar" aria-expanded="false" data-target="#navbar" data-toggle="collapse" class="navbar-toggle collapsed" type="button">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="http://www.luxuryrentalsinternational.com" class="navbar-brand">LRI</a>
+            <div class="brand-desc">
+                Back end desktop for LRI
+            </div>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">
+                <li class="active"><a class="page-scroll" href="index.php">Home</a></li>
+                <li><a class="page-scroll" page-scroll href="propertylist.php">Property list</a></li>
+                <li><a class="page-scroll" page-scroll href="#features">Property Editor</a></li>
+                <li><a class="page-scroll" page-scroll href="#team">Map Address</a></li>
+                <li><a class="page-scroll" page-scroll href="#pricing">Amenities </a></li>
+                <li><a class="page-scroll" page-scroll href="#clients">Setting room / bathroom</a></li>
+                <li><a class="page-scroll" page-scroll href="#contact">Upload images</a></li>
+                <li><a class="page-scroll" page-scroll href="#contact">Gallery</a></li>
+                <li><a class="page-scroll" page-scroll href="#contact">Review</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
 
 <header id="page-top">
     <div class="container">
@@ -25,14 +73,14 @@ include "header.php";
         <div class="heading-image animate-panel" data-child="img-animate" data-effect="fadeInRight">
             <p class="small">Just choose the module you want to work with.</p>
             <a href="propertylist.php"><img class="img-animate" src="images/landing/propertylist.gif"></a>
-            <a href="propertylist.php"><img class="img-animate" src="images/landing/propertyeditor.gif"></a>            
-            <a href="propertylist.php"><img class="img-animate" src="images/landing/gallery.gif"></a>
-            <a href="amenitieslist.php"><img class="img-animate" src="images/landing/amenities.gif"></a>           
+            <a href="#"><img class="img-animate" src="images/landing/propertyeditor.gif"></a>            
+            <a href="#"><img class="img-animate" src="images/landing/gallery.gif"></a>
+            <a href="#"><img class="img-animate" src="images/landing/amenities.gif"></a>           
             <br/>
-            <a href="propertylist.php"><img class="img-animate" src="images/landing/settingroom.gif"></a>
-            <a href="propertylist.php"><img class="img-animate" src="images/landing/images.gif"></a>
-            <a href="propertylist.php"><img class="img-animate" src="images/landing/mapaddress.gif"></a>            
-            <a href="propertylist.php"><img class="img-animate" src="images/landing/reviews.gif"></a>            
+            <a href="#"><img class="img-animate" src="images/landing/settingroom.gif"></a>
+            <a href="#"><img class="img-animate" src="images/landing/images.gif"></a>
+            <a href="#"><img class="img-animate" src="images/landing/mapaddress.gif"></a>            
+            <a href="#"><img class="img-animate" src="images/landing/reviews.gif"></a>            
         </div>
     </div>
 </header>
